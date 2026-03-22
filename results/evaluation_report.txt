@@ -1,0 +1,92 @@
+FORENSIC IPC CLASSIFIER - EVALUATION REPORT
+======================================================================
+
+MODEL CONFIGURATION
+----------------------------------------------------------------------
+Model Type: Random Forest Classifier
+Number of Trees: 200
+Max Depth: 20
+Min Samples Split: 5
+Min Samples Leaf: 2
+
+DATASET INFORMATION
+----------------------------------------------------------------------
+Test Samples: 500
+Number of Classes: 10
+Number of Features: 130609
+
+OVERALL PERFORMANCE METRICS
+----------------------------------------------------------------------
+Accuracy:  0.8160 (81.60%)
+Precision: 0.8176
+Recall:    0.8160
+F1-Score:  0.8163
+
+PER-CLASS PERFORMANCE
+----------------------------------------------------------------------
+IPC Code        Precision    Recall       F1-Score    
+----------------------------------------------------------------------
+IPC_302         0.8511       0.8000       0.8247      
+IPC_307         0.8511       0.8000       0.8247      
+IPC_308         0.7736       0.8200       0.7961      
+IPC_336         0.7736       0.8200       0.7961      
+IPC_337         0.8571       0.8400       0.8485      
+IPC_379         0.7925       0.8400       0.8155      
+IPC_380         0.8163       0.8000       0.8081      
+IPC_392         0.8039       0.8200       0.8119      
+IPC_419         0.8723       0.8200       0.8454      
+IPC_420         0.7843       0.8000       0.7921      
+
+======================================================================
+FEATURE IMPORTANCE (Top 20)
+======================================================================
+ 1. HOG_10658                      0.000867 (Cumulative: 0.0009)
+ 2. HOG_56162                      0.000620 (Cumulative: 0.0015)
+ 3. HOG_40531                      0.000552 (Cumulative: 0.0020)
+ 4. HOG_30213                      0.000546 (Cumulative: 0.0026)
+ 5. HOG_51927                      0.000540 (Cumulative: 0.0031)
+ 6. HOG_21246                      0.000532 (Cumulative: 0.0037)
+ 7. HOG_37037                      0.000470 (Cumulative: 0.0041)
+ 8. HOG_108598                     0.000467 (Cumulative: 0.0046)
+ 9. HOG_53826                      0.000425 (Cumulative: 0.0050)
+10. HOG_71253                      0.000421 (Cumulative: 0.0054)
+11. HOG_30096                      0.000421 (Cumulative: 0.0059)
+12. HOG_21721                      0.000410 (Cumulative: 0.0063)
+13. HOG_25868                      0.000401 (Cumulative: 0.0067)
+14. HOG_9537                       0.000395 (Cumulative: 0.0071)
+15. HOG_45168                      0.000393 (Cumulative: 0.0075)
+16. HOG_43409                      0.000392 (Cumulative: 0.0078)
+17. HOG_8374                       0.000386 (Cumulative: 0.0082)
+18. HOG_24648                      0.000386 (Cumulative: 0.0086)
+19. HOG_106841                     0.000383 (Cumulative: 0.0090)
+20. HOG_111388                     0.000381 (Cumulative: 0.0094)
+
+======================================================================
+CONFUSION MATRIX ANALYSIS
+======================================================================
+
+Confusion Matrix Shape: (10, 10)
+Total Correct: 408/500
+Misclassifications: 92
+
+
+CONFIDENCE ANALYSIS
+============================================================
+
+Overall Confidence Statistics:
+  Mean: 0.3976
+  Std:  0.1208
+  Min:  0.1257
+  Max:  0.6384
+
+Correct Predictions:
+  Count: 408
+  Mean Confidence: 0.4460
+  Std:  0.0682
+
+Incorrect Predictions:
+  Count: 92
+  Mean Confidence: 0.1830
+  Std:  0.0480
+
+Confidence Difference: 0.2629

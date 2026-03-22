@@ -1,0 +1,95 @@
+[2026-03-20 18:25:52] [INFO] Forensic IPC Mapper initialized
+[2026-03-20 18:25:52] [INFO] 
+================================================================================
+[2026-03-20 18:25:52] [START] FORENSIC IPC MAPPER - COMPLETE PIPELINE
+[2026-03-20 18:25:52] [INFO] ================================================================================
+[2026-03-20 18:25:52] [INFO] 
+======================================================================
+[2026-03-20 18:25:52] [START] STAGE 1: SYNTHETIC DATA GENERATION
+[2026-03-20 18:25:52] [INFO] ======================================================================
+[2026-03-20 18:27:17] [SUCCESS] Generated 500 synthetic samples
+[2026-03-20 18:27:17] [SUCCESS] Dataset saved to: C:\Users\Mokshak Shah\Downloads\b_T3uWUosghZq-1774011157368\data\synthetic
+[2026-03-20 18:27:17] [INFO] 
+======================================================================
+[2026-03-20 18:27:17] [START] STAGE 2: IPCV PREPROCESSING PIPELINE DEMO
+[2026-03-20 18:27:17] [INFO] ======================================================================
+[2026-03-20 18:27:17] [INFO] IPCV Pipeline Stages:
+[2026-03-20 18:27:17] [INFO]   1. Noise Reduction (Non-Local Means Denoising)
+[2026-03-20 18:27:17] [INFO]   2. Contrast Enhancement (CLAHE)
+[2026-03-20 18:27:17] [INFO]   3. Perspective Correction (Edge-based)
+[2026-03-20 18:27:17] [INFO]   4. Binarization (Adaptive Thresholding)
+[2026-03-20 18:27:17] [INFO]   5. Morphological Operations (Closing/Opening)
+[2026-03-20 18:27:17] [INFO]   6. Edge Detection (Canny + Dilation)
+[2026-03-20 18:27:17] [SUCCESS] Preprocessing pipeline configured successfully
+[2026-03-20 18:27:17] [INFO] 
+======================================================================
+[2026-03-20 18:27:17] [START] STAGE 3: FEATURE EXTRACTION SYSTEM
+[2026-03-20 18:27:17] [INFO] ======================================================================
+[2026-03-20 18:27:17] [INFO] Feature Categories:
+[2026-03-20 18:27:17] [INFO]   - HOG Features (Histogram of Oriented Gradients)
+[2026-03-20 18:27:17] [INFO]   - LBP Features (Local Binary Patterns)
+[2026-03-20 18:27:17] [INFO]   - Edge Features (Sobel operators)
+[2026-03-20 18:27:17] [INFO]   - Contour Features (Structure analysis)
+[2026-03-20 18:27:17] [INFO]   - Statistical Features (Moments, percentiles)
+[2026-03-20 18:27:17] [INFO]   - Morphological Features (Erosion, dilation)
+[2026-03-20 18:27:17] [INFO]   - Text Region Features (Connected components)
+[2026-03-20 18:27:17] [INFO]   - Frequency Domain Features (FFT analysis)
+[2026-03-20 18:27:17] [INFO] Total features extracted: 65+ per image
+[2026-03-20 18:27:17] [SUCCESS] Feature extraction system configured
+[2026-03-20 18:27:17] [INFO] 
+======================================================================
+[2026-03-20 18:27:17] [START] STAGE 4: RANDOM FOREST MODEL TRAINING
+[2026-03-20 18:27:17] [INFO] ======================================================================
+[2026-03-20 18:39:37] [SUCCESS] Model training completed successfully
+[2026-03-20 18:39:37] [SUCCESS] Model saved to: C:\Users\Mokshak Shah\Downloads\b_T3uWUosghZq-1774011157368\models
+[2026-03-20 18:39:37] [INFO] 
+======================================================================
+[2026-03-20 18:39:37] [START] STAGE 5: MODEL EVALUATION
+[2026-03-20 18:39:37] [INFO] ======================================================================
+[2026-03-20 18:44:57] [SUCCESS] Model evaluation completed
+[2026-03-20 18:44:57] [RESULT] Accuracy:  0.8160 (81.60%)
+[2026-03-20 18:44:57] [RESULT] Precision: 0.8176
+[2026-03-20 18:44:57] [RESULT] Recall:    0.8160
+[2026-03-20 18:44:57] [RESULT] F1-Score:  0.8163
+[2026-03-20 18:44:58] [INFO] 
+======================================================================
+[2026-03-20 18:44:58] [START] STAGE 6: INFERENCE SYSTEM DEMO
+[2026-03-20 18:44:58] [INFO] ======================================================================
+[2026-03-20 18:44:58] [INFO] Inference System Features:
+[2026-03-20 18:44:58] [INFO]   - Single image prediction with confidence scores
+[2026-03-20 18:44:58] [INFO]   - Top-K predictions (top 3 IPC sections)
+[2026-03-20 18:44:58] [INFO]   - Feature importance analysis
+[2026-03-20 18:44:58] [INFO]   - Prediction explanability
+[2026-03-20 18:44:58] [INFO]   - Batch prediction support
+[2026-03-20 18:44:58] [INFO] MODEL INFORMATION
+============================================================
+
+Number of classes (IPC sections): 10
+Number of features: 130609
+Number of trees: 200
+Max depth: 20
+
+IPC Sections:
+------------------------------------------------------------
+IPC_302: Punishment for voluntarily causing hurt
+IPC_307: Attempt to murder
+IPC_308: Attempt to commit culpable homicide
+IPC_336: Act endangering life or personal safety
+IPC_337: Causing hurt by act endangering life
+IPC_379: Punishment for theft
+IPC_380: Theft in dwelling house etc
+IPC_392: Punishment for dacoity
+IPC_419: Punishment for cheating
+IPC_420: Cheating and dishonestly inducing delivery of property
+
+[2026-03-20 18:44:58] [SUCCESS] Inference system ready for deployment
+[2026-03-20 18:44:58] [INFO] 
+================================================================================
+[2026-03-20 18:44:58] [SUMMARY] PIPELINE SUMMARY
+[2026-03-20 18:44:58] [INFO] ================================================================================
+[2026-03-20 18:44:58] [SUMMARY] Synthetic Data Generation: COMPLETED
+[2026-03-20 18:44:58] [SUMMARY] IPCV Preprocessing: COMPLETED
+[2026-03-20 18:44:58] [SUMMARY] Feature Extraction: COMPLETED
+[2026-03-20 18:44:58] [SUMMARY] Model Training: COMPLETED
+[2026-03-20 18:44:58] [SUMMARY] Model Evaluation: COMPLETED
+[2026-03-20 18:44:58] [SUMMARY] Inference System: COMPLETED

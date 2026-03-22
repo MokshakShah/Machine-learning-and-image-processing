@@ -1,0 +1,20 @@
+[project]
+name = "forensic-ipc-mapper"
+version = "0.1.0"
+description = "Forensic-grade ML+IPCV system for automatic IPC section mapping from FIR document images"
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+    "scikit-image>=0.21.0",
+    "scikit-learn>=1.3.0",
+    "pillow>=10.0.0",
+    "pytesseract>=0.3.10",
+    "matplotlib>=3.8.0",
+    "scipy>=1.11.0",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

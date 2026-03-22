@@ -1,0 +1,56 @@
+{
+  "label_encoder": {
+    "IPC_302": 0,
+    "IPC_307": 1,
+    "IPC_308": 2,
+    "IPC_336": 3,
+    "IPC_337": 4,
+    "IPC_379": 5,
+    "IPC_380": 6,
+    "IPC_392": 7,
+    "IPC_419": 8,
+    "IPC_420": 9
+  },
+  "label_decoder": {
+    "0": "IPC_302",
+    "1": "IPC_307",
+    "2": "IPC_308",
+    "3": "IPC_336",
+    "4": "IPC_337",
+    "5": "IPC_379",
+    "6": "IPC_380",
+    "7": "IPC_392",
+    "8": "IPC_419",
+    "9": "IPC_420"
+  },
+  "training_metrics": {
+    "train_accuracy": 1.0,
+    "test_accuracy": 0.08,
+    "precision": 0.07636807636807637,
+    "recall": 0.08,
+    "f1_score": 0.077123755680762,
+    "n_features": 130609,
+    "n_training_samples": 400,
+    "n_test_samples": 100,
+    "n_classes": 10
+  },
+  "ipc_sections": {
+    "IPC_302": "Punishment for voluntarily causing hurt",
+    "IPC_307": "Attempt to murder",
+    "IPC_308": "Attempt to commit culpable homicide",
+    "IPC_336": "Act endangering life or personal safety",
+    "IPC_337": "Causing hurt by act endangering life",
+    "IPC_379": "Punishment for theft",
+    "IPC_380": "Theft in dwelling house etc",
+    "IPC_392": "Punishment for dacoity",
+    "IPC_419": "Punishment for cheating",
+    "IPC_420": "Cheating and dishonestly inducing delivery of property"
+  },
+  "model_params": {
+    "n_estimators": 200,
+    "max_depth": 20,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "random_state": 42
+  }
+}
